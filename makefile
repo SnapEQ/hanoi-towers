@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -g -Wall -pedantic -Wstrict-prototypes -fsanitize=undefined $(shell pkg-config --cflags sdl2 SDL2_gfx)
+CFLAGS = -g -Wall -pedantic -fsanitize=undefined $(shell pkg-config --cflags sdl2 SDL2_gfx)
 LDLIBS = -fsanitize=undefined $(shell pkg-config --libs sdl2 SDL2_gfx) -lm
 
 all: main
